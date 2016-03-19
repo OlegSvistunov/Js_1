@@ -1,10 +1,10 @@
-function pow(a, b){
-	 number = prompt('Введите, пожалуйста, число' , 0);
-	 degree = prompt('Введите, пожалуйста, степень' , 0);
-	var a = parseInt(number);
-	var b = parseInt(degree);
-  var result;
-    switch (true){
+var number = prompt('Введите, пожалуйста, число' , 0);
+var degree = prompt('Введите, пожалуйста, степень' , 0);
+		function pow(a, b){
+			var a = parseInt(number);
+			var b = parseInt(degree);
+  		var result;
+          switch (true){
                   case (b == 0): // Если степень равна 0
                       result = 1;
                       // console.log('число в степени = ', result);
@@ -28,9 +28,9 @@ function pow(a, b){
                           result = result * a;
                       }
                       // console.log('число в степени = ', result);
-              }
-    return result;
-}
+            }
+      return result;
+  }
 var degreeResult = pow();
 console.log('число ', number, ' в степени ', degree, ' = ', degreeResult); // Вывод результата в консоль
 document.write('число ', number, ' в степени ', degree, ' = ', degreeResult); // Вывод результата на экран
